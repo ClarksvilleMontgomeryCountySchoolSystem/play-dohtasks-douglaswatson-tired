@@ -1,31 +1,41 @@
+"""
+ANSWER BOX - Copy the strings you need:
+
+"long body or round body? "
+") Add a small bump using {color2} to the back.\n"
+") Roll a smaller ball using {color1} for the head.\n"
+") Keep it as a ball.\n"
+"long tail or short tail? "
+") Roll a ball using {color1}.\n"
+") Add four small legs to the bottom using {color1}.\n"
+") Roll a thin rope using {color2} and attach to the back.\n"
+") Name this creation: "Mouse""
+") Roll the ball into an egg shape.\n"
+") Add two dots for eyes and a tiny nose.\n"
+") Attach the head to one end of the body.\n"
+"""
 
 def main():
-    # Enter your color.
-    color1 = "black"
-
-    print(f"1) Use {color1} to roll a medium-sized ball.\n")
-    # Collect input. Use choice1 Prompt:"big or small? "
-    choice1=input("big or small? ")
-    # == Is used to test for equality.
-    if choice1 == "big":
-        print("2) Flatten the ball into a wide disc.\n")
+    color1 = "gray"
+    color2 = "pink"
+    print(f"1) Roll a ball using {color1}.\n")
+    choice1=input("long body or round body? ")
+    # CAUTION: You must include the word "body" when checking!
+    if choice1 == "long body":
+        print("2) Roll the ball into an egg shape.\n")
     else:
         print("2) Keep it as a ball.\n")
-    print("3) Roll four small pieces into short ropes.\n")
-    print("4) Attach them to the bottom.\n")
-    print(f"5) Use {color1} to roll a small ball.\n")
-    print("6) Attach it to one side.\n")
-    #Go to user - Include a space after the ? in your prompt.
-    # Collect input. Use choice2 Prompt:"option 1 or option 2? "
-    choice2=input("option 1 or option 2? ")
-    # Use == to check the User's choice.
-    # Remember you are checking equality to a string. You must use quotes.
-    if choice2 == "option 1":
-        print("7) Pinch the small ball to make it pointy.\n")
+    print(f"3) Roll a smaller ball using {color1} for the head.\n")
+    print("4) Attach the head to one end of the body.\n")
+    choice2=input("long tail or short tail? ")
+    if choice2 == "long tail":
+        print(f"5) Roll a thin rope using {color2} and attach to the back.\n")
     else:
-        print("7) Keep the small ball round.\n")
-    print("8) Poke two tiny holes in the small ball for eyes.\n")
-    print('9) Write "Turtle" on the name card.')
+        print(f"5) Add a small bump using {color2} to the back.\n")
+    print(f"6) Add four small legs to the bottom using {color1}.\n")
+    print("7) Add two dots for eyes and a tiny nose.\n")
+    print("8) Name this creation: Mouse")
+
 
 if __name__ == "__main__":
     main()
